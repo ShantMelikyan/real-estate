@@ -39,7 +39,7 @@ export default function Home() {
 
         <div className="w-full relative pb-28 md:pb-32 lg:pb-40">
           <h1 className="mx-auto font-dellaRespira tracking-wider text-center uppercase text-4xl md:text-6xl lg:text-7xl ">
-            let's work <br /> together
+            let&apos;s work <br /> together
           </h1>
           <Image
             src={connect}
