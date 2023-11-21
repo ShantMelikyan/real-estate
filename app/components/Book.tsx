@@ -26,7 +26,7 @@ const Book = () => {
 
   return (
     <button
-      data-cal-link="estateshots/book"
+      data-cal-link="estatesshots/book"
       data-cal-config='{"layout":"month_view"}'
       className="text-[#C29C5B]"
     >

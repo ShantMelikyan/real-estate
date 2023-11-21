@@ -18,16 +18,22 @@ const Navbar = () => {
       <Link className="flex-1 mx-auto " href="/">
         <Image src={logo} alt="logo" className="mx-auto w-20" />
       </Link>
-      <button onClick={() => setIsMenuOpen(true)} className="md:hidden flex-1">
+      <button
+        onClick={() => setIsMenuOpen(true)}
+        className="md:hidden flex-1 text-[#C29C5B]"
+      >
         MENU
       </button>
-      <div className="text-lg hidden flex-1 md:flex md:flex-col overflow-visible items-end mt-20 ">
-        <div className="flex flex-col uppercase text-sm font-medium space-y-1  lg:mr-10 md:mr-5">
+      <div className="text-lg hidden flex-1 md:flex md:flex-col overflow-visible items-end mt-6 ">
+        <div className="flex flex-col uppercase text-sm font-medium space-y-1  lg:mr-10 md:mr-5 bg-[#F5F5F3]">
           <Link href="/" className="px-4  hover:text-[#C29C5B]">
             home
           </Link>
           <Link href="/service" className="px-4  hover:text-[#C29C5B]">
             service
+          </Link>
+          <Link href="/pricing" className="px-4  hover:text-[#C29C5B]">
+            Pricing
           </Link>
           <Link href="/portfolio" className="px-4  hover:text-[#C29C5B]">
             portfolio
@@ -55,23 +61,54 @@ const Navbar = () => {
           CLOSE
         </button>
         {/* Full-Screen mobile Menu Items */}
-        <div className="flex flex-col items-center space-y-2">
-          <Link href="/about" className="px-4 py-2  hover:text-[#C29C5B]">
+        <div className="flex flex-col items-center space-y-4 uppercase ">
+          <Link
+            onClick={() => setIsMenuOpen(false)}
+            href="/"
+            className="px-4 py-2  hover:text-[#C29C5B]"
+          >
             home
           </Link>
-          <Link href="/about" className="px-4 py-2  hover:text-[#C29C5B]">
+          <Link
+            onClick={() => setIsMenuOpen(false)}
+            href="/about"
+            className="px-4 py-2  hover:text-[#C29C5B]"
+          >
             service
           </Link>
-          <Link href="/about" className="px-4 py-2  hover:text-[#C29C5B]">
+          <Link
+            onClick={() => setIsMenuOpen(false)}
+            href="/pricing"
+            className="px-4 py-2  hover:text-[#C29C5B]"
+          >
+            Pricing
+          </Link>
+          <Link
+            onClick={() => setIsMenuOpen(false)}
+            href="/about"
+            className="px-4 py-2  hover:text-[#C29C5B]"
+          >
             portfolio
           </Link>
-          <Link href="/about" className="px-4 py-2  hover:text-[#C29C5B]">
+          <Link
+            onClick={() => setIsMenuOpen(false)}
+            href="/about"
+            className="px-4 py-2  hover:text-[#C29C5B]"
+          >
             about
           </Link>
-          <Link href="/about" className="px-4 py-2  hover:text-[#C29C5B]">
+          <Link
+            onClick={() => setIsMenuOpen(false)}
+            href="/contact"
+            className="px-4 py-2  hover:text-[#C29C5B]"
+          >
             contact
           </Link>
-          <Link href="/about" className="px-4 py-2  hover:text-[#C29C5B]">
+          <Link
+            onClick={() => setIsMenuOpen(false)}
+            href="/book"
+            className="px-4 py-2  hover:text-[#C29C5B]"
+          >
             Book
           </Link>
         </div>
