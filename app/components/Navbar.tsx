@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 import logo from "@/public/gold-logo.png";
-import Book from "./Book";
+import Book from "./PopupBook";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,22 +29,40 @@ const Navbar = () => {
           <Link href="/" className="px-4  hover:text-[#C29C5B]">
             home
           </Link>
-          <Link href="/service" className="px-4  hover:text-[#C29C5B]">
+          <Link
+            href="/service"
+            className="px-4  hover:text-[#C29C5B] duration-300"
+          >
             service
           </Link>
-          <Link href="/pricing" className="px-4  hover:text-[#C29C5B]">
+          <Link
+            href="/pricing"
+            className="px-4  hover:text-[#C29C5B] duration-300"
+          >
             Pricing
           </Link>
-          <Link href="/portfolio" className="px-4  hover:text-[#C29C5B]">
+          <Link
+            href="/portfolio"
+            className="px-4  hover:text-[#C29C5B] duration-300"
+          >
             portfolio
           </Link>
-          <Link href="/about" className="px-4  hover:text-[#C29C5B]">
+          <Link
+            href="/about"
+            className="px-4  hover:text-[#C29C5B] duration-300"
+          >
             about
           </Link>
-          <Link href="/contact" className="px-4  hover:text-[#C29C5B]">
+          <Link
+            href="/contact"
+            className="px-4  hover:text-[#C29C5B] duration-300"
+          >
             contact
           </Link>
-          <Link href="/book" className="px-4  hover:text-[#C29C5B]">
+          <Link
+            href="/book"
+            className="px-4  hover:text-[#C29C5B] duration-300"
+          >
             Book
           </Link>
         </div>

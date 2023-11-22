@@ -1,17 +1,9 @@
-/* First make sure that you have installed the package */
-
-/* If you are using yarn */
-// yarn add @calcom/embed-react
-
-/* If you are using npm */
-// npm install @calcom/embed-react
 "use client";
+import { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
-
-const Book = () => {
+const PopupBook = () => {
   useEffect(() => {
-    const initializeCal = async () => {
-      const { getCalApi } = await import("@calcom/embed-react");
+    (async function () {
       const cal = await getCalApi();
       cal("ui", {
         theme: "light",
@@ -19,20 +11,16 @@ const Book = () => {
         hideEventTypeDetails: true,
         layout: "month_view",
       });
-    };
-
-    initializeCal();
+    })();
   }, []);
-
   return (
     <button
+      className="text-[#C29C5B]"
       data-cal-link="estatesshots/book"
       data-cal-config='{"layout":"month_view"}'
-      className="text-[#C29C5B]"
     >
       BOOK
     </button>
   );
 };
-
-export default Book;
+export default PopupBook;
