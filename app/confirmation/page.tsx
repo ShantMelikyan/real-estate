@@ -6,13 +6,14 @@ const Confirmation = () => {
   return (
     <div className="font-raleway w-full bg-[#F5F5F3] text-[#1F1F1F]">
       <section className="flex flex-col items-center min-h-screen mx-4 pt-10">
-        <span className="md:my-8 my-6 text-center uppercase md:text-xl text-lg tracking-wider">
-          Great news
+        <span className="md:my-8 my-6 text-center uppercase tracking-wider">
+          Will confirm shortly
         </span>
         <h1 className="mx-auto font-dellaRespira tracking-wider text-center uppercase text-4xl md:text-6xl lg:text-7xl ">
-          our session <br />
-          was scheduled <br />
-          successfully
+          Booking was
+          <br />
+          successfully <br />
+          submitted
         </h1>
         <Image
           src={thankyou}
@@ -22,7 +23,7 @@ const Confirmation = () => {
         ></Image>
         <p className="text-center max-w-sm md:max-w-md md:text-xl text-lg">
           Thank you for choosing Estate Shots. We look forward to capturing the
-          beauty of your property! We will be in touch soon to confirm the
+          beauty of the property! We will be in touch soon to confirm the
           details of your session.
         </p>
         <p className="text-center max-w-sm md:max-w-md pt-10">

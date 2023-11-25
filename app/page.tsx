@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className=" w-full  text-[#1F1F1F] px-4">
       <section className="flex flex-col items-center pt-10">
-        <span className="md:my-8 my-6 text-center uppercase text-lg tracking-wider">
+        <span className="md:my-8 my-6 text-center uppercase  tracking-wider">
           los angeles
         </span>
         <h1 className="mx-auto font-dellaRespira tracking-wider text-center uppercase text-4xl md:text-[2.9rem] md:leading-none md:line-h lg:text-7xl ">
@@ -26,10 +26,13 @@ export default function Home() {
         </p>
       </section>
       <section id="packages" className="py-20 mt-10">
-        <h2 className="text-center uppercase   mb-16 font-dellaRespira text-xl font-semibold">
+        <h2 className="text-center uppercase font-dellaRespira text-xl font-semibold">
           Our Diverse Photography Services
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 max-w-2xl  md:mx-auto px-4 gap-10 [&>*]:flex-1">
+        <h3 className="text-center mt-4 mb-16">
+          Your All-in-One Photography Solution.
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 max-w-3xl xl:max-w-5xl md:mx-auto px-4 gap-10 [&>*]:flex-1">
           <article>
             <h2 className="font-dellaRespira uppercase font-medium text-lg">
               Photography
@@ -68,6 +71,51 @@ export default function Home() {
             <p>
               Creating immersive 3D tours that allow prospective buyers to
               explore properties remotely.
+            </p>
+          </article>
+          <article>
+            <h2 className="font-dellaRespira uppercase font-medium text-lg">
+              FLOOR PLANS
+            </h2>
+            <p className="text-lg mb-4">Detailed and Accurate Layouts</p>
+            <p>
+              Providing detailed floor plans to give a comprehensive view of the
+              property&apos;s layout, making it easier for buyers to envision
+              their future in the property.
+            </p>
+          </article>
+          <article>
+            <h2 className="font-dellaRespira uppercase font-medium text-lg">
+              VIRTUAL STAGING
+            </h2>
+            <p className="text-lg mb-4">Digitally Furnished Interiors</p>
+            <p>
+              Transforming empty spaces into beautifully staged homes with our
+              virtual staging, helping buyers to visualize the property&apos;s
+              potential.
+            </p>
+          </article>
+          <article>
+            <h2 className="font-dellaRespira uppercase font-medium text-lg">
+              TWILIGHT PHOTOGRAPHY
+            </h2>
+            <p className="text-lg mb-4">Magic of Dusk</p>
+            <p>
+              Highlighting the property&apos;s exterior and landscaping under
+              the warm glow of sunset with inviting atmosphere that stands out
+              in listings.
+            </p>
+          </article>
+          <article>
+            <h2 className="font-dellaRespira uppercase font-medium text-lg">
+              VIRTUAL TWILIGHTS & IMAGE EDITING
+            </h2>
+            <p className="text-lg mb-4">
+              Light into Twilight & Polished Photography
+            </p>
+            <p>
+              Transform day shots into twilight views, while our Image Editing
+              ensures every photo is flawlessly presented.
             </p>
           </article>
         </div>

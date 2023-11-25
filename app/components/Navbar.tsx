@@ -30,10 +30,10 @@ const Navbar = () => {
             home
           </Link>
           <Link
-            href="/service"
+            href="/services"
             className="px-4  hover:text-[#C29C5B] duration-300"
           >
-            service
+            services
           </Link>
           <Link
             href="/pricing"
@@ -92,7 +92,7 @@ const Navbar = () => {
             href="/about"
             className="px-4 py-2  hover:text-[#C29C5B]"
           >
-            service
+            services
           </Link>
           <Link
             onClick={() => setIsMenuOpen(false)}
@@ -103,7 +103,7 @@ const Navbar = () => {
           </Link>
           <Link
             onClick={() => setIsMenuOpen(false)}
-            href="/about"
+            href="/services"
             className="px-4 py-2  hover:text-[#C29C5B]"
           >
             portfolio
